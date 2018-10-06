@@ -1,0 +1,24 @@
+Course Name : master-MICROSERVICES-WITH-spring-boot-spring-cloud 
+
+DOMAIN NAME: Social Media Application
+
+USER -> POSTS
+
+URL TO BE USED IN PROJECT:
+
+   Domain Operations                      URL
+   =================                ==========================
+ 
+ - get all users					GET/users
+ 
+ - create a user					POST/user
+ 
+ - get a single user				GET/user/{id}
+ 
+ - delete a user					DELETE/user/{id}
+ 
+ - get all posts for a user			GET/users/{id}/posts
+ 
+ - create a POSTS  for a user		POST/users/{id}/posts
+ 
+ - get details of a POST of user	GET/user/{id}/posts/{post_id}
