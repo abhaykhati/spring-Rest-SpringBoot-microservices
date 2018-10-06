@@ -1,4 +1,4 @@
-# Spring-Rest-SpringBoot-microservices
+# Spring-Rest-SpringBoot-Microservices
 This repo is used to showcase spring Rest-Spring Boot tools-microservices- jpa
 
 It includes code for spring boot starter web, jpa, H2 etc.
