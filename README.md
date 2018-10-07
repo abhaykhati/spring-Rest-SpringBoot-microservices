@@ -23,3 +23,11 @@ Spring Boot Actuator Dependencies and Hal Browser URL
            	<artifactId>spring-data-rest-hal-browser</artifactId>                 
 	  </dependency>
 
+After adding above dependency Spring will auto-configure the browser and make it available via the default endpoint.
+
+http://localhost:8080/browser/index.html#/
+
+or use
+
+http://localhost:8080/  which will redirect the user to above mentioned URL.
+
