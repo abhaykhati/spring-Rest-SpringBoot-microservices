@@ -5,6 +5,9 @@ It includes code for spring boot starter web, jpa, H2 etc.
 
 It has implementation for spring boot tools like Swagger, Internationalization, Postman, Heteoas etc.
 
-To access swagger documentation use http://localhost:8080/v2/api-docs
+Swagger Documentation URL
 
-To access visual documentation use http://localhost:8080/swagger-ui.html 
+To access SWAGGER API documentation use http://localhost:8080/v2/api-docs
+
+To access VISUAL documentation use      http://localhost:8080/swagger-ui.html 
+
