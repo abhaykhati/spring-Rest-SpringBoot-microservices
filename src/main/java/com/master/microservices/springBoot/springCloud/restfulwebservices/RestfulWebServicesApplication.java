@@ -31,6 +31,7 @@ public class RestfulWebServicesApplication {
 		ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
 		messageSource.setBasename("messages");
 		return messageSource;
-
+		
+	
 	}
 }

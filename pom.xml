@@ -76,16 +76,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<!--  spring boot Actuator with HAL browser added for application monitoring -->
+		<!-- spring boot Actuator with HAL browser added for application monitoring -->
 		<dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-rest-hal-browser</artifactId>
-        </dependency>
-		
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+			</dependency>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-rest-hal-browser</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>
@@ -95,7 +95,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-    <!-- resources added as part of the final jar in target directory  -->
+		<!-- resources added as part of the final jar in target directory -->
 		<sourceDirectory>E:\STS_Workspace\restful-web-services\src\main\java</sourceDirectory>
 		<scriptSourceDirectory>E:\STS_Workspace\restful-web-services\src\main\scripts</scriptSourceDirectory>
 		<testSourceDirectory>E:\STS_Workspace\restful-web-services\src\test\java</testSourceDirectory>
