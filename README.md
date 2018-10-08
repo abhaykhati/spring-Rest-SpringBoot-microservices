@@ -82,7 +82,7 @@ Following methods are created for URL Versioning in
 		return new PersonV2(new Name("Mila", "queen"));
 	}
 
-###### Versioning through Header Version PARAM
+###### Versioning through Header PARAM
 
 	@GetMapping(path = "person/header", headers = "X-API-VERSION=1")
 	// while giving URL in postman use it like http://localhost:8080/person/header
@@ -102,7 +102,7 @@ Following methods are created for URL Versioning in
 		return new PersonV2(new Name("Mila", "queen"));
 	}
 
-###### Versioning through Content Negotiation or Accept Header or MIME type version
+###### Versioning through Content Negotiation or Accept Header or MIME type 
 
 	@GetMapping(path = "person/produces", produces = "application/vnd.company.app-v1+json")
 	// while giving URL in postman use it like http://localhost:8080/person/produces
@@ -126,8 +126,17 @@ Following methods are created for URL Versioning in
 		return new PersonV2(new Name("stella", "queen"));
 	}
 
+# Basic Security
+Added following dependency which will create default password for the application
 
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-security</artifactId>
+	</dependency>
 
+A password will be generated on console each time you run the application.
+Which you need to provide while accessing any URL in POSTMAN with the 
+Username : user
 
 
 
