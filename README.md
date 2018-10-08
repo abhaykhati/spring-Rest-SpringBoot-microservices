@@ -1,11 +1,11 @@
-# Spring-Rest-SpringBoot-Microservices
+### Spring-Rest-SpringBoot-Microservices
 This Repository is used to showcase spring Rest-Spring Boot Tools-Microservices- JPA
 
 It includes code for spring boot starter web, jpa, H2 etc.
 
 It has implementation for spring boot tools like Swagger, Internationalization, Postman, Heteoas etc.
 
-# Swagger Documentation URL
+### Swagger Documentation URL
 Add following dependencies to POM.xml
 
 	<dependency>
@@ -25,7 +25,7 @@ To access SWAGGER API documentation use http://localhost:8080/v2/api-docs
 
 To access VISUAL documentation use      http://localhost:8080/swagger-ui.html 
 
-# Spring Boot Actuator Dependencies and Hal Browser URL
+### Spring Boot Actuator Dependencies and Hal Browser URL
 
 	    <dependency>
           	<groupId>org.springframework.boot</groupId>
@@ -45,12 +45,12 @@ or use
 
 > http://localhost:8080/  which will redirect the user to above mentioned URL.
 
-# URL Versioning
+### URL Versioning
 
 Following methods are created for URL Versioning in 
-###### PersonVersioningController.java
+### PersonVersioningController.java
 
-###### Versioning through URI
+### Versioning through URI
 
 	@GetMapping(path = "v1/person")
 	// it is demo of URI version
@@ -64,7 +64,7 @@ Following methods are created for URL Versioning in
 		return new PersonV2(new Name("Kila", "queen"));
 	}
 
-###### Versioning through Request PARAM
+### Versioning through Request PARAM
 
 	@GetMapping(path = "person/param", params = "version=1")
 	// while giving URL in postman use it like
@@ -82,7 +82,7 @@ Following methods are created for URL Versioning in
 		return new PersonV2(new Name("Mila", "queen"));
 	}
 
-###### Versioning through Header PARAM
+### Versioning through Header PARAM
 
 	@GetMapping(path = "person/header", headers = "X-API-VERSION=1")
 	// while giving URL in postman use it like http://localhost:8080/person/header
@@ -102,7 +102,7 @@ Following methods are created for URL Versioning in
 		return new PersonV2(new Name("Mila", "queen"));
 	}
 
-###### Versioning through Content Negotiation or Accept Header or MIME type 
+### Versioning through Content Negotiation or Accept Header or MIME type 
 
 	@GetMapping(path = "person/produces", produces = "application/vnd.company.app-v1+json")
 	// while giving URL in postman use it like http://localhost:8080/person/produces
@@ -126,7 +126,7 @@ Following methods are created for URL Versioning in
 		return new PersonV2(new Name("stella", "queen"));
 	}
 
-# Basic Security
+### Basic Security
 Added following dependency which will create default password for the application
 
 	<dependency>
@@ -138,6 +138,18 @@ A password will be generated on console each time you run the application.
 Which you need to provide while accessing any URL in POSTMAN with the 
 Username : user
 
+### JPA H2 REST URI
+Most of the code is added to following files.
+
+src/main/java/com/master/microservices/springBoot/springCloud/restfulwebservices/user/Post.java
+
+src/main/java/com/master/microservices/springBoot/springCloud/restfulwebservices/user/PostRepository.java
+
+src/main/java/com/master/microservices/springBoot/springCloud/restfulwebservices/user/UserJPAResource.java
+
+src/main/java/com/master/microservices/springBoot/springCloud/restfulwebservices/user/UserRepository.java
+
+src/main/resources/data.sql
 
 
 
